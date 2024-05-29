@@ -4,14 +4,94 @@
     "/Users/rovinsharma/Desktop/DemoIMS/WebUI/WebUI.csproj": {}
   },
   "projects": {
-    "/Users/rovinsharma/Desktop/DemoIMS/WebUI/WebUI.csproj": {
+    "/Users/rovinsharma/Desktop/DemoIMS/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rovinsharma/Desktop/DemoIMS/WebUI/WebUI.csproj",
-        "projectName": "WebUI",
-        "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/WebUI/WebUI.csproj",
+        "projectUniqueName": "/Users/rovinsharma/Desktop/DemoIMS/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/Application/Application.csproj",
         "packagesPath": "/Users/rovinsharma/.nuget/packages/",
-        "outputPath": "/Users/rovinsharma/Desktop/DemoIMS/WebUI/obj/",
+        "outputPath": "/Users/rovinsharma/Desktop/DemoIMS/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rovinsharma/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/rovinsharma/Desktop/DemoIMS/Domain/Domain.csproj": {
+                "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "NetcodeHub.Packages.Extensions.Attributes.RequiredGuid": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rovinsharma/Desktop/DemoIMS/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rovinsharma/Desktop/DemoIMS/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/Domain/Domain.csproj",
+        "packagesPath": "/Users/rovinsharma/.nuget/packages/",
+        "outputPath": "/Users/rovinsharma/Desktop/DemoIMS/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rovinsharma/.nuget/NuGet/NuGet.Config"
@@ -42,6 +122,239 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rovinsharma/Desktop/DemoIMS/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rovinsharma/Desktop/DemoIMS/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/rovinsharma/.nuget/packages/",
+        "outputPath": "/Users/rovinsharma/Desktop/DemoIMS/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rovinsharma/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/rovinsharma/Desktop/DemoIMS/Application/Application.csproj": {
+                "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/Application/Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rovinsharma/Desktop/DemoIMS/WebUI/WebUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rovinsharma/Desktop/DemoIMS/WebUI/WebUI.csproj",
+        "projectName": "WebUI",
+        "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/WebUI/WebUI.csproj",
+        "packagesPath": "/Users/rovinsharma/.nuget/packages/",
+        "outputPath": "/Users/rovinsharma/Desktop/DemoIMS/WebUI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rovinsharma/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/rovinsharma/Desktop/DemoIMS/Application/Application.csproj": {
+                "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/Application/Application.csproj"
+              },
+              "/Users/rovinsharma/Desktop/DemoIMS/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/rovinsharma/Desktop/DemoIMS/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.19.1, )"
+            },
+            "NetcodeHub.Packages.Components.BreadCrumb": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NetcodeHub.Packages.Components.DataGrid": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NetcodeHub.Packages.Components.FileUpload": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "NetcodeHub.Packages.Components.Modal": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NetcodeHub.Packages.Components.Toast": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "NetcodeHub.Packages.Components.Validations": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NetcodeHub.Packages.Extensions.LocalStorage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NetcodeHub.Packages.UI.Templates.Breeze": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[25.2.4, )"
+            },
+            "Syncfusion.Blazor.Grid": {
+              "target": "Package",
+              "version": "[25.2.4, )"
+            },
+            "Syncfusion.Blazor.Navigations": {
+              "target": "Package",
+              "version": "[25.2.4, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[25.2.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

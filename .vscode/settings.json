@@ -1,0 +1,5 @@
+{
+    "dotnet.defaultLaunchProfile": {
+        "project": "WebUI.csproj"
+    }
+}
